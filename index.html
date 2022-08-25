@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css link included here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Notebook | Note making app</title>
+</head>
+
+<body>
+    <div>
+        <!-- Navbar of title and searchbox -->
+        <nav class="navbar sticky-top bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-0 h1">NOTEBOOK </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" id="searchtxt" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container my-3">
+            <hr>
+            <h1>Welcome to Notebook!</h1>
+            <hr>
+        </div>
+
+        <!-- Textarea to add notes in the notebook -->
+        <div class="container my-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add a note here.</h5>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="addtxt" rows="6" placeholder="Write here" value=""></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="addbtn">Add note</button>
+                </div>
+            </div>
+        </div>
+
+        <div class=" container my-3">
+            <hr>
+            <h1>Your Notes</h1>
+            <hr>
+
+            <!-- Priviously added notes here -->
+            <div class="container-fluid row" id="notes"></div>
+
+        </div>
+
+    </div>
+
+    <!-- external js file attached here -->
+    <script src="index.js"></script>
+    <!-- Bootstap js script link included here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
