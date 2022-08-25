@@ -19,34 +19,40 @@
             <div class="container-fluid">
                 <a class="navbar-brand mb-0 h1">NOTEBOOK </a>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" id="searchtxt" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit" >Search</button>
+                    <input class="form-control me-2" id="searchtxt" type="search" placeholder="Search your notes here." aria-label="Search">
                 </form>
             </div>
         </nav>
 
         <div class="container my-3">
             <hr>
-            <h1>Welcome to Notebook!</h1>
+            <h1>Welcome To Notebook !</h1>
             <hr>
         </div>
 
         <!-- Textarea to add notes in the notebook -->
-        <div class="container my-3">
+        <div class="container my-4">
+            <hr>
+            <h3 class="card-title">Add Note Here</h3>
+            <hr>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Add a note here.</h5>
                     <div class="mb-3">
-                        <textarea class="form-control" id="addtxt" rows="6" placeholder="Write here" value=""></textarea>
+                        <h5>Title</h5>
+                        <input type="text" class="form-control" id="addtitle" placeholder="Write title here.">
+                      </div>
+                    <div class="mb-3">
+                        <h5>Discription</h5>
+                        <textarea class="form-control" id="addtxt" rows="4" placeholder="Write details here." value=""></textarea>
                     </div>
-                    <button class="btn btn-primary" id="addbtn">Add note</button>
+                    <button class="btn btn-primary" id="addbtn">Add Note</button>
                 </div>
             </div>
         </div>
 
         <div class=" container my-3">
             <hr>
-            <h1>Your Notes</h1>
+            <h3>Your Notes</h3>
             <hr>
 
             <!-- Priviously added notes here -->
